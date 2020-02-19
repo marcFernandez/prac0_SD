@@ -1,6 +1,7 @@
 import java.io.*;
 
 import utils.*;
+import clases.*;
 
 public class Main {
 
@@ -17,6 +18,13 @@ public class Main {
             System.out.println("Error Found during Operation:" + e.getMessage());
             e.printStackTrace();
         }
+
+        String[] clientParams = {"localhost", "1234"};
+
+        Client client = new Client();
+
+        client.main(clientParams);
+
     }
 
 }
